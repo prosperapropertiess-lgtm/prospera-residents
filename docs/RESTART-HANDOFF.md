@@ -55,15 +55,19 @@ commit `.env` files. There is no service-role key in this app.
 
 Local production builds pass after removing the unnecessary Tailwind loader
 and adding the required Suspense boundaries for this Next.js version.
-Lint and local logic/API tests pass. Tests use only fixtures and mock network
+Lint, 20 local logic/API tests, and checks of 14 generated pages / 230
+internal links pass. Tests use only fixtures and mock network
 responses, never real prospect messages. Browser review could not run:
 Chromium was blocked by macOS sandbox `bootstrap_check_in ... Permission
 denied (1100)`, and a local Next server was blocked with `listen EPERM`.
 
 Network is restricted in this session: Supabase DNS lookup reports ENOTFOUND;
 GitHub access reports `Could not resolve host: github.com`. A successful build
-is not evidence of a successful deployment. Check Git history/status and the
-latest final response for whether a commit or push succeeded.
+is not evidence of a successful deployment. Implementation commit `6121682`
+(`Build Prospera Rent renter experience`) was created locally. An actual
+`git push origin main` attempt then failed with `Could not resolve host:
+github.com` (exit 128). Nothing was published. A subsequent documentation-only
+commit records this result. All application changes are preserved in Git.
 
 Remote: `https://github.com/prosperapropertiess-lgtm/prospera-residents.git`.
 Branch: `main`. Linked Vercel project: `prospera-residents`; intended domain

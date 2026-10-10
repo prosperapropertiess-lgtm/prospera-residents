@@ -678,4 +678,3 @@ The site must feel renter-focused at every step, retain the existing brand, work
 No fake inventory, fabricated testimonials, invented urgency, placeholder success messages or unsupported service guarantees.
 
 A visitor with no suitable result should still leave with something useful: a saved search, clearer costs, a practical guide or a sensible next step.
-
